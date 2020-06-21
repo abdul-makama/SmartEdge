@@ -9,9 +9,9 @@
     <form action="time" method="post">
         {% csrf_token %}
         Enter your DOB:</br>
-        Day: <input type="text"  name = "day" required></br>
-        Month: <input type="text"  name = "month" required></br>
-        Year: <input type="text"  name = "year" required>
+        Day: <input type="number" min="1" max="31"  name = "day" required></br>
+        Month: <input type="number" min="1" max="12"  name = "month" required></br>
+        Year: <input type="number" max="2020" name = "year" required>
         <input type="submit">
     </form>
 </body>
